@@ -21,7 +21,8 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
-    path('about/', views.about, name='about'),
-    path('html/', views.htmlstyle, name='html'),
-    path('youtube/', views.openbyurl, name='youtube')
+    path('about', views.about, name='about'),
+    path('analyze', views.analyze, name='analyze'),
+    # path('html/', views.htmlstyle, name='html'),
+    # path('youtube/', views.openbyurl, name='youtube')
 ]
